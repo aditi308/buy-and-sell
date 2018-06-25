@@ -1,15 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="viewport" id="viewport" content="target-densitydpi=high-dpi,initial-scale=1.0,user-scalable=no" />
+
 
 <head>
 <link rel="stylesheet" type="text/css" href="assets\css\style.css">
-<title>signIn</title>
-<meta charset="utf-8">
-  <meta name="sign in" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<title>SignUp</title>
 </head>
 
 <body>
@@ -20,10 +17,153 @@
 <p><center><font face="Century Gothic" color="0097a8" font size=4px>
 This site helps return the lost item to the rightful owner in a<br>simple,convenient and confidential way.</font></center></p>
 
-<button>Log In</button>
+<button class="myBtn_multi">Log In</button>
+    <button class="myBtn_multi">Sign Up</button>
 
-<object align="right">
-<button>Sign Up</button></object></button>
+    <!-- The Modal -->
+    <div class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+            <center>
+            <h4><font face="verdana" font size="5">Log in</font></h4>
+            <form>
+ 			<input id="textboxid" type = "text" placeholder="  Name" required/> 
+  	        <br>
+ 			<br>
+ 			<input id="textboxid" type = "password" placeholder="  Password"required/>
+ 			<br>
+ 			<br>
+ 			<input id="textboxid" type = "button" name = "Log In" value = "Log In">
+ 			<br>
+ 			<br>
+ 		    </form>
+ 		    </center>
+        </div>
+
+    </div>
+
+    <!-- The Modal -->
+    <div  class="modal modal_multi">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close close_multi">×</span>
+
+		    <center>
+            <h4><font face="verdana" font size="5">Sign Up</font></h4>
+            <form>
+		    <input id="textboxid" type = "text" placeholder="  Name" required/> 
+			<br><br>
+            <input id="textboxid" type = "telNo" placeholder="  Mobile Number" maxlength="10" required/>
+			<br><br>
+     	    <input id="textboxid" type="number" placeholder="  Year You are in (1,2,3,4)" maxlength="1" required/>
+			<br><br>            
+			<input id="textboxid" type= "email" placeholder="  E-mail" required/>
+     	    <br><br>
+    		<input id="textboxid" type = "password" placeholder="  Password"required/>
+            <br><br>
+   		    <input id="textboxid" type = "password" placeholder="  Confirm Password"required/>
+  `			<br>
+ 			<br>
+ 			<input id="textboxid" type = "submit" name = "submit" value = "Submit">
+ 			<br>
+ 			<br>
+ 		    </form>
+ 		    </center>
+
+
+
+            
+                    </div>
+
+    </div>
+    <script>
+        // Get the modal
+
+        var modalparent = document.getElementsByClassName("modal_multi");
+
+        // Get the button that opens the modal
+
+        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+        // Get the <span> element that closes the modal
+        var span_close_multi = document.getElementsByClassName("close_multi");
+
+        // When the user clicks the button, open the modal
+        function setDataIndex() {
+
+            for (i = 0; i < modal_btn_multi.length; i++)
+            {
+                modal_btn_multi[i].setAttribute('data-index', i);
+                modalparent[i].setAttribute('data-index', i);
+                span_close_multi[i].setAttribute('data-index', i);
+            }
+        }
+
+
+
+        for (i = 0; i < modal_btn_multi.length; i++)
+        {
+            modal_btn_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span_close_multi[i].onclick = function() {
+                var ElementIndex = this.getAttribute('data-index');
+                modalparent[ElementIndex].style.display = "none";
+            };
+
+        }
+
+        window.onload = function() {
+
+            setDataIndex();
+        };
+
+        window.onclick = function(event) {
+            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+                modalparent[event.target.getAttribute('data-index')].style.display = "none";
+            }
+
+            // OLD CODE
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
+
+// Get the modal
+
+        var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+        btn.onclick = function() {
+
+            modal.style.display = "block";
+        }
+
+// When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+
+
+    </script>
+
+    
 
 <div class="navbar">
 <p id="link">	Contact us: <a href="mail.com">email@gmail.com</a>  
