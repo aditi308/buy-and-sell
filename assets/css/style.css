@@ -24,11 +24,7 @@
     right: 16px;
 }
 
-p{
-    position: absolute; 
-    transition: .5s ease; 
-    top: 75%;
-    left: 87%;
+p{  float: left;
     color: black;
     font-family: Courier New, monospace; 
     text-decoration: none;
