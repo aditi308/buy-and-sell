@@ -1,5 +1,3 @@
-
-
 .image{
     height: 50%;
     top: 0;
@@ -29,7 +27,7 @@ p{  float: left;
     font-family: Courier New, monospace; 
     text-decoration: none;
 }
-button{
+.b,#b1,#b2{
     background-color:#0097a8;
     border: none;
     width: 150px;
@@ -116,7 +114,7 @@ button{
 
 
         #textboxid {border-radius: 15px; width: 253px; height: 25px; font-size:12pt; }
-        #subb, #logg{border-radius: 15px; width: 150px; height: 42px; color: white; background-color: DodgerBlue; font-size: 20pt;}
+        #subb, #logg{border-radius: 15px; width: 150px; height: 42px; color: white; background-color:#0097a8; font-size: 20pt;}
         /* The Close Button */
         .close {
            color: white;
@@ -175,15 +173,66 @@ button{
             cursor: pointer;
         }
 
-       
+.container-fluid
+{ 
+ background-color: #0097a8;
+ height: auto;
+}
 
+#lf{
+    color: white;
+    font-size: 21px;
 
+}
 
+#p1,#p2,#p3,#p4{
+        border: 2px solid rgb(100, 157, 242);opacity:0.5;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(100, 157, 242);opacity:0.5;
+    height: 360px;
+    width: 247px;
+    font-size: 20px;
+    text-align: center;
+    }
+#p1{
+     position: absolute; 
+    transition: .5s ease; 
+    top: 15%;
+    left:7%;
 
+}
+#p2
+{
+     position: absolute; 
+    transition: .5s ease; 
+    top: 15%;
+    left:30%;
 
+}
+#p3{
+     position: absolute; 
+    transition: .5s ease; 
+    top: 15%;
+    right: 30%;
 
+}
+#p4{
+     position: absolute; 
+    transition: .5s ease; 
+    top: 15%;
+    right: 7%;
 
+}
 
-
-
-
+#hh{
+    background-color:rgb(100, 157, 242);opacity:0.5;
+    border:1px solid rgb(100, 157, 242);opacity:0.5;
+    width: 245px;
+    height: auto;
+    color: white;
+    cursor: pointer;
+    
+}
+#ss{ background-color:rgb(100, 157, 242);opacity:0.5;
+   }
