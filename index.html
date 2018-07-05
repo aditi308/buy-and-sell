@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
- <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
- <meta name="viewport" id="viewport" content="target-densitydpi=high-dpi,initial-scale=1.0,user-scalable=no" />
-
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="assets\css\style.css">
 <title>SignUp</title>
-</head>
 
-<body background="assets\images\i3.png">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
 
 <div class="container1">  
 <img class="image" src="assets\images\i1.png" alt="Lost And Found">
@@ -21,151 +22,97 @@
 <h2><b>About</b></h2>
 <p><font face="Century Gothic" font size=5px color: "black">This site helps return the lost item to the rightful owner in a simple,convenient<br>and confidential way.</font></p>
 
-<button id="b2" class="myBtn_multi">Log In</button>
-    <button id="b1" class="myBtn_multi">Sign Up</button>
 
-    <!-- The Modal -->
-    <div class="modal modal_multi">
+  <!-- Trigger the modal with a button -->
+  <button id="b2" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Log In</button>
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-            <center>
-            <h4><font face="verdana" font size="5">Log in</font></h4>
-            <form>
- 			<input id="textboxid" type = "text" placeholder="  Name" required/> 
-  	        <br>
- 			<br>
- 			<input id="textboxid" type = "password" placeholder="  Password"required/>
- 			<br>
- 			<br>
- 			<input id="logg" type = "button" name = "Log In" value = "Log In">
- 			<br>
- 			<br>
- 		    </form>
- 		    </center>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog" id="m1">
+    <center>
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><font face="verdana" font size="5">Log in</font></h4>
         </div>
+        <div class="modal-body">
+          <br>
 
-    </div>
-
-    <!-- The Modal -->
-    <div  class="modal modal_multi">
-
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close close_multi">×</span>
-
-		    <center>
-            <h4><font face="verdana" font size="5">Sign Up</font></h4>
-            <form>
-		    <input id="textboxid" type = "text" placeholder="  Name" required/> 
-			<br><br>
-            <input id="textboxid" type = "telNo" placeholder="  Mobile Number" maxlength="10" required/>
-			<br><br>
-     	    <input id="textboxid" type="number" placeholder="  Year You are in (1,2,3,4)" maxlength="1" required/>
-			<br><br>            
-			<input id="textboxid" type= "email" placeholder="  E-mail" required/>
-     	    <br><br>
-    		<input id="textboxid" type = "password" placeholder="  Password"required/>
-            <br><br>
-   		    <input id="textboxid" type = "password" placeholder="  Confirm Password"required/>
-  `			<br>
- 			<br>
- 			<input id="subb" type = "submit" name = "submit" value = "Submit">
- 			<br>
- 			<br>
- 		    </form>
- 		    </center>
-
-
-
+           <center>
             
-                    </div>
-
+            <form>
+            <input id="textboxid" type = "text" placeholder="  Name" required/> 
+            <br>
+            <br>
+            <input id="textboxid" type = "password" placeholder="  Password"required/>
+            <br>
+            <br>
+            <input id="logg" type = "button" name = "Log In" value = "Log In">
+            <br>
+            <br>
+            </form>
+            </center>
+               </div>
+       </div>
+      
     </div>
-    <script>
-        // Get the modal
-
-        var modalparent = document.getElementsByClassName("modal_multi");
-
-        // Get the button that opens the modal
-
-        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
-
-        // Get the <span> element that closes the modal
-        var span_close_multi = document.getElementsByClassName("close_multi");
-
-        // When the user clicks the button, open the modal
-        function setDataIndex() {
-
-            for (i = 0; i < modal_btn_multi.length; i++)
-            {
-                modal_btn_multi[i].setAttribute('data-index', i);
-                modalparent[i].setAttribute('data-index', i);
-                span_close_multi[i].setAttribute('data-index', i);
-            }
-        }
+</center>
+  </div>
+  
+</div>
 
 
+  
+  <button id="b1" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Sign Up</button>
 
-        for (i = 0; i < modal_btn_multi.length; i++)
-        {
-            modal_btn_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "block";
-            };
+  
+  <div class="modal fade" id="myModal2" role="dialog" id="m2">
+    <center>
+    <div class="modal-dialog">
+    
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+            <h4><font face="verdana" font size="5">Sign Up</font></h4>
+        </div>
+        <div class="modal-body">
+           <br>
+            <center>
+            <form>
+            <input id="textboxid" type = "text" placeholder="  Name" required/> 
+            <br><br>
+            <input id="textboxid" type = "telNo" placeholder="  Mobile Number" maxlength="10" required/>
+            <br><br>
+            <input id="textboxid" type="number" placeholder="  Year You are in (1,2,3,4)" maxlength="1" required/>
+            <br><br>            
+            <input id="textboxid" type= "email" placeholder="  E-mail" required/>
+            <br><br>
+            <input id="textboxid" type = "password" placeholder="  Password"required/>
+            <br><br>
+            <input id="textboxid" type = "password" placeholder="  Confirm Password"required/>
+  `         <br>
+            <br>
+            <input id="subb" type = "submit" name = "submit" value = "Submit">
+            <br>
+            <br>
+            </form>
+            </center>
 
-            // When the user clicks on <span> (x), close the modal
-            span_close_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "none";
-            };
-
-        }
-
-        window.onload = function() {
-
-            setDataIndex();
-        };
-
-        window.onclick = function(event) {
-            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
-                modalparent[event.target.getAttribute('data-index')].style.display = "none";
-            }
-
-            // OLD CODE
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
-        };
-
-//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
-
-// Get the modal
-
-        var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-        var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
-
-// When the user clicks on the button, open the modal
-
-        btn.onclick = function() {
-
-            modal.style.display = "block";
-        }
-
-// When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+           </div>
+       </div>
+      </div>
+  </center>
+    </div>
+  </div>
+  
 
 
 
-    </script>
+
+
 
 
 <button class="b" id="b3">need help?</button>

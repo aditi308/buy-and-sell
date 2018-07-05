@@ -27,6 +27,8 @@ p{  float: left;
     font-family: Courier New, monospace; 
     text-decoration: none;
 }
+
+
 .b,#b1,#b2{
     background-color:#0097a8;
     border: none;
@@ -84,23 +86,9 @@ p{  float: left;
     left: 87%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1); 
 }
-        /* The Modal (background) */
-        .modal {
 
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            border-radius: 15px;
-            width: 10%;
-            height: 25%; 
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
 
+       
         /* Modal Content */
         .modal-content {
             background-color: #fefefe;
@@ -108,7 +96,7 @@ p{  float: left;
             padding: 20px;
             border: 1px solid #888;
             border-radius: 15px;
-            width: 10%;
+            width: 70%;
 
         }
 
@@ -134,30 +122,8 @@ p{  float: left;
             text-decoration: none;
             cursor: pointer;
         }
-        /* The Modal (background) */
-        .modal {
-            display: none; /* Hidden by default */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            overflow: auto; /* Enable scroll if needed */
-            background-color: rgb(0,0,0); /* Fallback color */
-            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-        }
-
-        /* Modal Content */
-        .modal-content {
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            
-            width: 23%;
-        }
-
+       
+       
         /* The Close Button */
         .close {
             color: white;
@@ -182,13 +148,14 @@ p{  float: left;
 #lf{
     color: white;
     font-size: 21px;
+    margin: 0;
 
 }
 
 #p1,#p2,#p3,#p4{
         border: 2px solid rgb(100, 157, 242);opacity:0.5;
     border-radius: 20px;
-    color: white;
+    color: white!important;
     background-color: rgb(100, 157, 242);opacity:0.5;
     height: 360px;
     width: 247px;
@@ -232,6 +199,7 @@ p{  float: left;
     height: auto;
     color: white;
     cursor: pointer;
+    align-items: center;
     
 }
 #ss{ background-color:rgb(100, 157, 242);opacity:0.5;
