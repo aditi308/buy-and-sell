@@ -1,27 +1,27 @@
   @import url('https://fonts.googleapis.com/css?family=Allerta');
 
  @import url('https://fonts.googleapis.com/css?family=Lekton+Bold');
-.image{
-    height: 50%;
-    top: 0;
-    width: 100%;  
-    z-index: 0;  
-}
+
+ @import url('https://fonts.googleapis.com/css?family=Quicksant');
+  @import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
 .container1 {
-    position: relative;
-    text-align: center;
     color: white;
     font-size: 60px;
+
+
 }
 .top-left {
     position: absolute;
-    top: 8px;
+    top: 45px;
     left: 16px;
 }
 
 .top-right {
     position: absolute;
-    top: 8px;
+    top: 45px;
     right: 16px;
 }
 
@@ -31,64 +31,55 @@ p{  float: left;
     text-decoration: none;
 }
 
-
-.b,#b1,#b2{
-    background-color:#0097a8;
-    border: none;
+#b1,#b2{
+    background-color:#80D8FF;
     width: 150px;
     height: 45px;
     color: white;
-       
+    border:1px solid #707070;
+    border-radius: 0;   
     text-decoration: none;
     font-size: 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    float: right; 
+    font-family: Lekton Bold;
       
 }
-.b{
-    background-color:white;
-    border-style: solid;
-    border-width: 1px;
-    width: auto;
-    height: auto;
-    color: black;
-    font-size: 13px;
-    border-radius: 20px;
-    cursor: pointer;
-        
-}
-#b3{
-    
-     position: absolute; 
+#b3,#b4{
+    background-color: black;
+    position: absolute; 
     transition: .5s ease; 
     top: 95%;
+     text-decoration: none!important;
+    color: white!important;
+    border:1px solid black;
+    border: auto;
+    font-size: 17px;
+    cursor: pointer;
+}
+#b3{
+     position: absolute; 
+    transition: .5s ease; 
     left: 2%;
-
 }
 #b4{
     
      position: absolute; 
     transition: .5s ease; 
-    top: 95%;
     left:85%;
-    text-decoration: none;
+    font-size: 17px;
 }
 
 #b2{
     position: absolute; 
     transition: .5s ease; 
-    top: 70%;
+    top: 44%;
     left: 87%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1); 
-}
+    }
 #b1{
     position: absolute; 
     transition: .5s ease; 
-    top: 80%;
+    top: 57%;
     left: 87%;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.1); 
-}
+    }
 
 
        
@@ -98,14 +89,14 @@ p{  float: left;
             
             padding: 20px;
             border: 1px solid #888;
-            border-radius: 15px;
+            border-radius: 0px;
             width: 70%;
 
         }
 
 
-        #textboxid {border-radius: 15px; width: 253px; height: 25px; font-size:12pt; }
-        #subb, #logg{border-radius: 15px; width: 150px; height: 42px; color: white; background-color:#0097a8; font-size: 20pt;}
+        #textboxid {border-radius: 0px; width: 253px; height: 35px; font-size:12pt; background-color: #eeeeee}
+        #subb, #logg{border-radius: 0px; width: 150px; height: 42px; color: white; background-color:#80D8FF; font-size: 20pt;}
         /* The Close Button */
         .close {
            color: white;
@@ -150,16 +141,17 @@ p{  float: left;
 
 #lf{
     color: white;
-    font-size: 21px;
+    font-size: 50px;
     margin: 0;
+    font-family: Allerta;
 
 }
 
 #p1,#p2,#p3,#p4{
-        border: 2px solid rgb(100, 157, 242);opacity:0.5;
-    border-radius: 20px;
+        border: 2px solid #00838F;
+    border-radius: 0px;
     color: white!important;
-    background-color: rgb(100, 157, 242);opacity:0.5;
+    background-color: #00838F;
     height: 360px;
     width: 247px;
     font-size: 20px;
@@ -168,7 +160,7 @@ p{  float: left;
 #p1{
      position: absolute; 
     transition: .5s ease; 
-    top: 15%;
+    top: 20%;
     left:7%;
 
 }
@@ -176,28 +168,28 @@ p{  float: left;
 {
      position: absolute; 
     transition: .5s ease; 
-    top: 15%;
+    top: 20%;
     left:30%;
 
 }
 #p3{
      position: absolute; 
     transition: .5s ease; 
-    top: 15%;
+    top: 20%;
     right: 30%;
 
 }
 #p4{
      position: absolute; 
     transition: .5s ease; 
-    top: 15%;
+    top: 20%;
     right: 7%;
 
 }
 
 #hh{
-    background-color:rgb(100, 157, 242);opacity:0.5;
-    border:1px solid rgb(100, 157, 242);opacity:0.5;
+    background-color:#00838F;
+    border:1px solid #00838F;
     width: 245px;
     height: auto;
     color: white;
@@ -283,3 +275,13 @@ p{  float: left;
     left: 74%;
     
     }
+
+    #borde{
+        height: 500px;
+        border-left: 8px solid #00796B;
+        border-top:  8px solid #00796B;
+        width: 210px;
+
+        border-right: 8px solid #00796B ;
+         }
+   
